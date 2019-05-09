@@ -1,0 +1,126 @@
+
+img{
+  max-block-size: 400px;
+  margin: 0px 30px 0px 90px;
+  border-radius: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 54px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-right: 15px double #d6c808;
+    border-left: 15px double #d6c808;
+    background: gray;
+    background: url("concrete-wall-8.jpg");
+    background-size:cover;
+      background-position: center;
+      
+  }
+
+  header {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    color:white;
+    text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Sliding side bar with About me content */
+
+#main {
+  transition: margin-left .5s;
+  padding: auto 0px;
+  color: white;
+  margin: 0px 0px 0px 70px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 10px 10px 20px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+  
+}
+
+/* Drop Down Tab Section*/
+
+/* This is the box at face value */
+.dropbtn {
+  background-color: #d6c808;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+
+}
+/* Mouse hover color change */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 100px;
+
+}
+/* this is the container*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+/* contents inside */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+ 
+}
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+
+
+
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
